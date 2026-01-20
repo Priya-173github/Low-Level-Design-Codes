@@ -16,6 +16,10 @@ class Helper {
         // Returns product of double numbers
         return a * b;
     }
+
+    static int Multiply(int a, int b, int c){
+        return a*b*c;
+    }
 }
 
 // Class 2
@@ -29,5 +33,6 @@ class methodOverloading
         // input as in arguments
         System.out.println(Helper.Multiply(12, 18));
         System.out.println(Helper.Multiply(1.3, 5.3));
+        System.out.println(Helper.Multiply(2, 2, 3));
     }
 }
