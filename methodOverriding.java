@@ -3,9 +3,14 @@
 class Parent {
 
     // Method of parent class
-    void Print() {
+    void Print() { // instance method - choosen at runtime
         System.out.println("parent class");
     }
+
+    // static void Print() { // static method - belongs to class - choosen at
+    // compile time
+    // System.out.println("parent class");
+    // }
 }
 
 // Class 2
@@ -13,9 +18,13 @@ class Parent {
 class subclass1 extends Parent {
 
     // Method
-    void Print() { 
-      System.out.println("subclass1"); 
+    void Print() {
+        System.out.println("subclass1");
     }
+
+    // static void Print() {
+    // System.out.println("subclass1");
+    // }
 }
 
 // Class 3
@@ -26,6 +35,10 @@ class subclass2 extends Parent {
     void Print() {
         System.out.println("subclass2");
     }
+
+    // static void Print() {
+    // System.out.println("subclass2");
+    // }
 }
 
 // Class 4
@@ -45,5 +58,8 @@ class methodOverriding {
 
         a = new subclass2();
         a.Print();
+
+        // subclass1 b = new subclass1();
+        // b.Print();
     }
 }
